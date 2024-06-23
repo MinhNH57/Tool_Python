@@ -20,9 +20,7 @@ def get_businesses_from_page(url, keyword):
             for business in businesses:
                 address_tag = business.find('p')
                 address_text = address_tag.get_text().strip()
-                        # Tách thành từng dòng
                 lines = address_text.splitlines()
-                        # Lấy dòng thứ hai (index 1), nếu có đủ số dòng
                 if len(lines) > 1:
                     address_line = lines[1].strip()
                 if address_line and keyword.lower() in address_line.lower():
@@ -39,7 +37,8 @@ def get_businesses_from_page(url, keyword):
 Base_url = "https://www.tratencongty.com/thanh-pho-ha-noi/huyen-thach-that/xa-phung-xa/?page="
 
 # Từ khoá để tìm kiếm trong địa chỉ
-keyword = "Đồng vàng"
+print("Nhập vào địa chỉ mà cần tìm kiếm :")
+keyword = input()
 num_businesses = 0
 for i in range(13):
     url = Base_url + str(i)
