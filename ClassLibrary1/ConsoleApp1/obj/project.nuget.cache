@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "dgSpecHash": "67Z1mHVSKRVgQHvzip9sJiLHFjFU+/PzbB5KdrpbU6cP2Ts3YPsDc0mxVBMRxrhlLEd2WgM/hUjs2G/1a9mg2A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Dell\\Desktop\\ClassLibrary1\\ConsoleApp1\\ConsoleApp1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Dell\\.nuget\\packages\\microsoft.win32.systemevents\\7.0.0\\microsoft.win32.systemevents.7.0.0.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\opencv\\2.4.11\\opencv.2.4.11.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\opencvsharp4\\4.10.0.20240616\\opencvsharp4.4.10.0.20240616.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\opencvsharp4.extensions\\4.10.0.20240616\\opencvsharp4.extensions.4.10.0.20240616.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\opencvsharp4.runtime.win\\4.10.0.20240616\\opencvsharp4.runtime.win.4.10.0.20240616.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\system.drawing.common\\7.0.0\\system.drawing.common.7.0.0.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\zbar\\1.0.2\\zbar.1.0.2.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\zxing.net\\0.16.9\\zxing.net.0.16.9.nupkg.sha512"
+  ],
+  "logs": []
+}
