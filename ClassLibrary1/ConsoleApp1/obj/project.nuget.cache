@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "67Z1mHVSKRVgQHvzip9sJiLHFjFU+/PzbB5KdrpbU6cP2Ts3YPsDc0mxVBMRxrhlLEd2WgM/hUjs2G/1a9mg2A==",
+  "dgSpecHash": "B0y5o5uItog=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Dell\\Desktop\\ClassLibrary1\\ConsoleApp1\\ConsoleApp1.csproj",
+  "projectFilePath": "C:\\Users\\Dell\\Desktop\\Tool_Python\\ClassLibrary1\\ConsoleApp1\\ConsoleApp1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Dell\\.nuget\\packages\\microsoft.win32.systemevents\\7.0.0\\microsoft.win32.systemevents.7.0.0.nupkg.sha512",
     "C:\\Users\\Dell\\.nuget\\packages\\opencv\\2.4.11\\opencv.2.4.11.nupkg.sha512",

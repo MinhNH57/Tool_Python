@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Dell\\Desktop\\ClassLibrary1\\ClassLibrary1\\ClassLibrary1.csproj": {}
+    "C:\\Users\\Dell\\Desktop\\Tool_Python\\ClassLibrary1\\ClassLibrary1\\ClassLibrary1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Dell\\Desktop\\ClassLibrary1\\ClassLibrary1\\ClassLibrary1.csproj": {
+    "C:\\Users\\Dell\\Desktop\\Tool_Python\\ClassLibrary1\\ClassLibrary1\\ClassLibrary1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dell\\Desktop\\ClassLibrary1\\ClassLibrary1\\ClassLibrary1.csproj",
+        "projectUniqueName": "C:\\Users\\Dell\\Desktop\\Tool_Python\\ClassLibrary1\\ClassLibrary1\\ClassLibrary1.csproj",
         "projectName": "ClassLibrary1",
-        "projectPath": "C:\\Users\\Dell\\Desktop\\ClassLibrary1\\ClassLibrary1\\ClassLibrary1.csproj",
+        "projectPath": "C:\\Users\\Dell\\Desktop\\Tool_Python\\ClassLibrary1\\ClassLibrary1\\ClassLibrary1.csproj",
         "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Dell\\Desktop\\ClassLibrary1\\ClassLibrary1\\obj\\",
+        "outputPath": "C:\\Users\\Dell\\Desktop\\Tool_Python\\ClassLibrary1\\ClassLibrary1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -27,6 +27,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -39,6 +40,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -86,7 +92,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303\\RuntimeIdentifierGraph.json"
         }
       }
     }
