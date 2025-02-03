@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sơ đồ ghế ngồi</title>
+    <style>
+        .seat-layout {
+            display: grid;
+            gap: 5px;
+            margin-top: 20px;
+            justify-content: center;
+        }
+        .seat {
+            width: 40px;
+            height: 40px;
+            background-color: #228D83;
+            text-align: center;
+            line-height: 40px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .seat.selected {
+            background-color: orange;
+        }
+        .aisle {
+            background-color: black; /* Màu nền cho lối đi */
+            border: 2px dashed #333;  /* Đường viền đậm cho lối đi */
+            width: 40px;
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sơ đồ ghế ngồi</h1>
+    <form id="seat-form">
+        <label for="rows">Số hàng:</label>
+        <input type="number" id="rows" min="1" value="5">
+        <label for="columns">Số cột mỗi bên:</label>
+        <input type="number" id="columns" min="1" value="5">
+        <button type="button" onclick="generateSeats()">Tạo bố cục</button>
+    </form>
+
+    <div id="seat-layout-container">
+        <div id="seat-layout" class="seat-layout"></div>
+    </div>
+
+    <script>
+        function generateSeats() {
+            const rows = parseInt(document.getElementById('rows').value);
+            const columns = parseInt(document.getElementById('columns').value);
+            const seatLayout = document.getElementById('seat-layout');
+
+            // Clear existing layout
+            seatLayout.innerHTML = '';
+
+            // Set grid layout with gap for aisles
+            seatLayout.style.gridTemplateColumns = `1fr repeat(${columns}, 1fr) 1fr repeat(${columns}, 1fr) 1fr`; // Two aisles
+            seatLayout.style.gridTemplateRows = `repeat(${rows}, 1fr)`;
+
+            // Generate seats
+            for (let row = 1; row <= rows; row++) {
+                const rowLetter = String.fromCharCode(64 + row); // Chuyển số hàng thành chữ cái (A, B, C, ...)
+                let seatNumber = 1; // Đánh số ghế lại từ 1 cho mỗi hàng
+
+                for (let col = 1; col <= columns * 2 + 3; col++) { // 2 aisles + 2 sides + 1 extra column for aisles
+                    if (col === 1 || col === columns + 2 || col === columns * 2 + 3) {
+                        // Add aisles at the first, middle, and last positions
+                        const aisle = document.createElement('div');
+                        aisle.className = 'aisle';
+                        seatLayout.appendChild(aisle);
+                    } else {
+                        const seat = document.createElement('div');
+                        seat.className = 'seat';
+                        seat.textContent = `${rowLetter}${seatNumber++}`; // Ghế tiếp tục đánh số từ 1 cho mỗi hàng
+
+                        seat.addEventListener('click', () => seat.classList.toggle('selected'));
+                        seatLayout.appendChild(seat);
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>
